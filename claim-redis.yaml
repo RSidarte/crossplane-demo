@@ -1,0 +1,8 @@
+# claim-redis.yaml
+apiVersion: database.example.com/v1alpha1
+kind: RedisConfig
+metadata:
+  name: redis-service-team-a
+  namespace: danau # Très important : le claim est NAMESPACED
+spec:
+  storageGB: 16
